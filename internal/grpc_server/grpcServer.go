@@ -12,7 +12,7 @@ import (
 	"google.golang.org/protobuf/types/known/emptypb"
 )
 
-const grpcPort = 50052
+const grpcPort = 50051
 
 type server struct {
 	auth_v1.UnimplementedAuthV1Server
