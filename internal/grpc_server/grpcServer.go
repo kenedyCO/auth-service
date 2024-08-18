@@ -38,7 +38,9 @@ func StartGRPCServer() {
 func (s *server) Create(ctx context.Context, req *auth_v1.CreateRequest) (*auth_v1.CreateResponse, error) {
 	log.Printf("req: %v", req)
 
-	return &auth_v1.CreateResponse{}, nil
+	return &auth_v1.CreateResponse{
+		Id: 123,
+	}, nil
 }
 func (s *server) Get(ctx context.Context, req *auth_v1.GetRequest) (*auth_v1.GetResponse, error) {
 	log.Printf("req: %v", req)
