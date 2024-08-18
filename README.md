@@ -1,1 +1,1 @@
-# auth-service
+# chat-service
