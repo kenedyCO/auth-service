@@ -54,4 +54,4 @@ jobs:
             
             docker rm $CONTAINER_NAME
             
-            docker run -d -p 50051:50051 -name $CONTAINER_NAME -t $REGISTRY/$IMAGE_NAME:$TAG
+            docker run -d -p 50051:50051 --name $CONTAINER_NAME -t $REGISTRY/$IMAGE_NAME:$TAG
